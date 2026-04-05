@@ -1,0 +1,32 @@
+
+* Task 3
+**********************************************************************
+* DATA persons TYPE tt_persons.
+ DATA persons TYPE /lrn/t_persons.
+
+ persons =
+    VALUE #(
+       ( person )
+       (
+         first_name = 'CDS'
+         last_name  = 'ABAP'
+         addresses =
+           VALUE #(
+             ( street      = 'SAP-Allee 29'
+               postal_code = '68789'
+               city        = 'St.Leon-Rot'
+               country     = 'DE'
+             )
+             ( street      = '35 rue d''Alsace'
+               postal_code = '92300'
+               city        = 'Levallois-Perret'
+               country     = 'FR'
+             )
+             ( street      = 'Bedfont Road'
+               postal_code = 'TW14 8HD'
+               city        = 'Feltham'
+               country     = 'GB'
+             )
+            )
+           )
+         ).
